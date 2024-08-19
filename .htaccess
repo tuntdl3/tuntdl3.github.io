@@ -1,9 +1,0 @@
-# Enable custom routing
-RewriteEngine on 
-
-# Route documentation and tutorial pages 
-RewriteRule ^(documentation|tutorials)\/.*$ DrKumoMQTT.doccarchive/index.html [L]
-
-# Route files within the documentation archive 
-RewriteRule ^(css|js|data|images|downloads|favicon\.ico|favicon\.svg|img|theme-settings\.json|videos)\/.*$ DrKumoMQTT.doccarchive/$0 [L]
-
